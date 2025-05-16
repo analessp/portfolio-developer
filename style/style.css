@@ -27,7 +27,7 @@ body {
     padding-left: 120px;
     padding-top: 68px;
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
     list-style-type: none;
     color: #7209b7;
     font-weight: 700;
@@ -49,14 +49,14 @@ body {
 main {
     padding-left: 120px;
     display: flex;
-    gap: 10rem;
+    gap: 9rem;
     align-items: center;
 }
 
 .introduce {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.3rem;
     width: 40%;
 }
 
@@ -69,7 +69,7 @@ main {
 }
 
 .title h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 
 .title h2 {
@@ -81,15 +81,16 @@ main {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.3rem;
     align-items: center;
 }
 
 .social-links li {
+    cursor: pointer;
     border: 2px solid #c3c3c3;
     background-color: rgba(128, 128, 128, 0.454);
     padding: 1rem 0 1rem 0;
-    width: 70%;
+    width: 60%;
     text-align: center;
     border-radius: 12px;
 
@@ -108,7 +109,7 @@ main {
 }
 
 .logo {
-    width: 25rem;
+    width: 20rem;
     border-radius: 50%;
     border: 2px solid #c3c3c3;
     height: fit-content;
@@ -130,7 +131,7 @@ footer {
 
 footer ul {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     list-style: none;
     margin-bottom: 1rem;
 }
@@ -139,53 +140,4 @@ footer a {
     text-decoration: none;
     color: white;
     font-weight: 600;
-}
-
-@media only screen and (max-width: 768px) {
-    
-    body {
-        justify-content: center;
-    }
-
-    .navbar-list {
-        justify-content: center;
-        padding-left: 0;
-        padding-top: 40px;
-        margin-bottom: 0;
-    }
-
-    main {
-        height: 100vh;
-        margin-top: 0;
-        flex-direction: column-reverse;
-        padding-left: 0;
-        gap: 1rem;
-    }
-
-    .introduce {
-        justify-content: flex-end;
-        width: 80%;
-        margin-bottom: 8rem;
-    }
-
-    .logo {
-        top: 6.5rem;
-        width: 18rem;
-    }
-
-}
-
-@media only screen and (max-width: 426px) {
-    .logo {
-        right: 16%;
-    }
-
-    .introduce {
-        margin-bottom: 3rem;
-    }
-
-    .title h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0.5rem;
-    }
 }
