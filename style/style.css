@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url(/style/about-me.css);
 
 * {
     margin: 0;
@@ -14,8 +13,6 @@ html, body {
 }
 
 body {
-    height: 100vh;
-    width: 100%;
     background-color: black;
     color: white;
     display: flex;
@@ -41,6 +38,11 @@ body {
     font-weight: 600;
 }
 
+.page:hover {
+    color: #7209b7;
+    transition: color 0.3s ease;
+}
+
 .active {
     font-weight: 800;
     color: #7209b7;
@@ -51,6 +53,7 @@ main {
     display: flex;
     gap: 9rem;
     align-items: center;
+    flex-grow: 1;
 }
 
 .introduce {
@@ -58,10 +61,12 @@ main {
     flex-direction: column;
     gap: 1.3rem;
     width: 40%;
+    max-width: 600px;
 }
 
 .introduce p {
     text-align: justify;
+    line-height: 1.6;
 }
 
 .title {
@@ -83,29 +88,22 @@ main {
     flex-direction: column;
     gap: 1.3rem;
     align-items: center;
+    margin-top: 2rem;
 }
 
-.social-links li {
-    cursor: pointer;
-    border: 2px solid #c3c3c3;
-    background-color: rgba(128, 128, 128, 0.454);
-    padding: 1rem 0 1rem 0;
-    width: 60%;
-    text-align: center;
-    border-radius: 12px;
-
-&:hover {
+.social-links li:hover {
     border: 2px solid rgba(97, 97, 97, 0.454);
     background-color: #7209b7;
     transition-duration: 400ms;
     transform: scale(1.1);
-  }
 }
 
 .social-links a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    display: block;
+    padding: 0.5rem;
 }
 
 .logo {
@@ -116,28 +114,137 @@ main {
     position: fixed;
     right: 15rem;
     top: 10rem;
+    object-fit: cover;
 }
 
 footer {
-    margin-top: auto;
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0;
     background-color: rgb(15, 15, 16);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     flex-shrink: 0;
+    width: 100%;
 }
 
 footer ul {
     display: flex;
     gap: 1.5rem;
     list-style: none;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 footer a {
     text-decoration: none;
     color: white;
     font-weight: 600;
+}
+
+/* Para laptops menores e tablets na horizontal */
+@media (max-width: 1024px) { 
+    .navbar-list {
+        padding-left: 50px;
+        padding-top: 40px;
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+main {
+    padding-left: 50px;
+    gap: 5rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.introduce {
+    width: 80%;
+    max-width: none;
+}
+
+.introduce p {
+    text-align: center;
+}
+
+.logo {
+    position: relative;
+    right: auto;
+    top: auto;
+    margin-top: 2rem;
+    width: 15rem;
+}
+
+/* Para tablets na vertical e celulares maiores */
+@media (max-width: 768px) {
+    .navbar-list {
+        padding-left: 20px;
+        padding-top: 30px;
+        font-size: 1.2rem;
+        gap: 1.5rem;
+        justify-content: center;
+    }
+}
+
+main {
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 3rem;
+}
+
+.introduce {
+    width: 90%;
+    gap: 1rem;
+}
+
+.title h1 {
+    font-size: 2.2rem;
+}
+
+.title h2 {
+    font-size: 1.2rem;
+}
+
+.social-links li {
+    width: 80%;
+    max-width: 250px;
+}
+
+/* Para celulares menores */
+@media (max-width: 480px) {
+    .navbar-list {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-top: 20px;
+        font-size: 1rem;
+    }
+
+    main {
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: 2rem;
+    }
+
+    .introduce {
+        width: 95%;
+    }
+
+    .title h1 {
+        font-size: 1.8rem;
+    }
+
+    .title h2 {
+        font-size: 1rem;
+    }
+
+    .logo {
+        width: 12rem;
+    }
+
+    .social-links li {
+        width: 90%;
+        padding: 0.8rem 0;
+    }
 }
