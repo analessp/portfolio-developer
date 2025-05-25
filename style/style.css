@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #6a994e;
+    --background-dark: #2c3e2e;
+    --light-text: #f0f0f8;
+    --secondary-color: #a7be9f;
+    --accent-color: #c7a184;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
 }
 
 html, body {
@@ -13,154 +21,257 @@ html, body {
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: var(--background-dark);
+    color: var(--light-text);
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+    color: var(--light-text);
+}
+
+header {
+    background-color: var(--background-dark);
+    padding: 2.5rem 0;
+    text-align: center;
 }
 
 .navbar-list {
-    padding-left: 120px;
-    padding-top: 68px;
     display: flex;
-    gap: 2rem;
+    justify-content: center;
+    gap: 2.5rem;
     list-style-type: none;
-    color: #7209b7;
-    font-weight: 700;
-    font-size: 1.5rem;
-    margin-bottom: 3rem;
+    margin: 0;
 }
 
 .page {
     text-decoration: none;
-    color: white;
+    color: var(--light-text);
     font-weight: 600;
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 .page:hover {
-    color: #7209b7;
-    transition: color 0.3s ease;
+color: var(--primary-color);
 }
 
 .active {
     font-weight: 800;
-    color: #7209b7;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 3px;
 }
 
 main {
-    padding-left: 120px;
-    display: flex;
-    gap: 9rem;
-    align-items: center;
     flex-grow: 1;
+    padding: 4rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+        gap: 5rem;
+    }
 }
 
 .introduce {
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
-    width: 40%;
+    width: 100%;
     max-width: 600px;
 }
 
 .introduce p {
     text-align: justify;
-    line-height: 1.6;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: var(--light-text);
+}
+
+@media (min-width: 768px) {
+    .introduce p {
+        text-align: left;
+    }
 }
 
 .title {
     text-align: center;
 }
 
+@media (min-width: 768px) {
+    .title {
+        text-align: left;
+    }
+}
+
 .title h1 {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
 }
 
 .title h2 {
-    font-size: 1.5rem;
-    color: #7209b7;
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
 }
 
 .social-links {
     list-style-type: none;
     display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
     margin-top: 2rem;
 }
 
+@media (min-width: 768px) {
+    .social-links {
+        justify-content: flex-start;
+    }
+}
+
+.social-links li {
+    transition: transform 0.3s ease;
+}
+
 .social-links li:hover {
-    border: 2px solid rgba(97, 97, 97, 0.454);
-    background-color: #7209b7;
-    transition-duration: 400ms;
-    transform: scale(1.1);
+transform: translateY(-5px);
 }
 
 .social-links a {
     text-decoration: none;
-    color: white;
-    font-weight: bold;
-    display: block;
-    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.1rem;
+}
+
+.social-links i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+.social-links li:hover i {
+    color: var(--primary-color);
 }
 
 .logo {
-    width: 20rem;
-    border-radius: 50%;
-    border: 2px solid #c3c3c3;
-    height: fit-content;
-    position: fixed;
-    right: 15rem;
-    top: 10rem;
-    object-fit: cover;
+width: 250px;
+height: 250px;
+border-radius: 50%;
+border: 5px solid var(--primary-color);
+object-fit: cover;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+flex-shrink: 0;
+}
+
+.btn-primary {
+    display:inline-block;
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 1.2rem 2.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: #557d41;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 footer {
-    padding: 1rem 0;
-    background-color: rgb(15, 15, 16);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    background-color: var(--background-dark);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
     flex-shrink: 0;
-    width: 100%;
-}
-
-footer ul {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-    margin-bottom: 0;
-}
-
-footer a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
 }
 
 /* Para laptops menores e tablets na horizontal */
 @media (max-width: 1024px) { 
     .navbar-list {
-        padding-left: 50px;
-        padding-top: 40px;
-        font-size: 1.3rem;
-        margin-bottom: 2rem;
+        gap: 1.8rem;
     }
+
+.page {
+    font-size: 1.2rem;
 }
 
 main {
-    padding-left: 50px;
-    gap: 5rem;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding: 3rem 1rem;
+    gap: 2rem;
 }
 
 .introduce {
-    width: 80%;
+    max-width: 90%;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+.btn-primary {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+} 
+
+/* Para tablets na vertical e celulares maiores */
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem 0;
+    }
+
+.navbar-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.page {
+    font-size: 1.1rem;
+}
+
+main {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 2.5rem 1rem;
+}
+
+.introduce {
+    width: 100%;
     max-width: none;
 }
 
@@ -168,83 +279,76 @@ main {
     text-align: center;
 }
 
-.logo {
-    position: relative;
-    right: auto;
-    top: auto;
-    margin-top: 2rem;
-    width: 15rem;
-}
-
-/* Para tablets na vertical e celulares maiores */
-@media (max-width: 768px) {
-    .navbar-list {
-        padding-left: 20px;
-        padding-top: 30px;
-        font-size: 1.2rem;
-        gap: 1.5rem;
-        justify-content: center;
-    }
-}
-
-main {
-    padding-left: 20px;
-    padding-right: 20px;
-    gap: 3rem;
-}
-
-.introduce {
-    width: 90%;
-    gap: 1rem;
-}
-
 .title h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
 }
 
 .title h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+}
+
+.social-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .social-links li {
+    width: auto;
+    max-width: none;
+}
+
+.logo {
+    width: 180px;
+    height: 180px;
+    margin-top: 2rem;
+}
+
+.btn-primary {
     width: 80%;
-    max-width: 250px;
+    max-width: 300px;
+    font-size: 1rem;
+}
 }
 
 /* Para celulares menores */
 @media (max-width: 480px) {
+    header {
+        padding: 1rem 0;
+    }
+
     .navbar-list {
-        flex-direction: column;
-        align-items: center;
-        padding-left: 0;
-        padding-top: 20px;
+        gap: 0.8rem;
+    }
+
+    .page {
         font-size: 1rem;
     }
 
     main {
-        padding-left: 15px;
-        padding-right: 15px;
-        gap: 2rem;
-    }
-
-    .introduce {
-        width: 95%;
+        padding: 2rem 0.8rem;
+        gap: 1.5rem
     }
 
     .title h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .title h2 {
+        font-size: 1.2rem;
+    }
+
+    introduce p {
         font-size: 1rem;
     }
 
     .logo {
-        width: 12rem;
+        width: 150px;
+        height: 150px;
     }
 
     .social-links li {
-        width: 90%;
-        padding: 0.8rem 0;
+        width: auto;
+        padding: 0;
     }
 }
