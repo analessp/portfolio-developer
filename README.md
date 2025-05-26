@@ -1,8 +1,5 @@
 # Portfólio de Desenvolvedora - Ana Lessa
 
-![Capa do Portfólio - Desenvolvedora Full-Stack]({{profile.jpg-73adf550-f227-4660-b210-7edcac65f93c}}){width="800"}
-*Se esta imagem não carregar, considere adicionar uma captura de tela do seu portfólio aqui.*
-
 Bem-vindo(a) ao meu portfólio pessoal! Este é o meu espaço para compartilhar um pouco sobre quem eu sou, minha paixão por desenvolvimento e os projetos que venho construindo.
 
 ## 🌟 Sobre Mim
