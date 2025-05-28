@@ -49,7 +49,6 @@ Gostaria de entrar em contato? Sinta-se à vontade para me conectar em minhas re
 -   **[LinkedIn](https://linkedin.com/in/ana-lessa-silva)**
 -   **[GitHub](https://github.com/analessp)**
 -   **Email:** lessakesia07@gmail.com
--   **WhatsApp:** +55 (85) 99160-6630
 
 ---
 
