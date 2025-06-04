@@ -50,7 +50,7 @@
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .skills-section h2 {
@@ -63,7 +63,7 @@
 .skill-category {
     background-color: #3d543e;
     border-radius: 10px;
-    padding: 2rem;
+    padding: 0.8rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     border: 1px solid var(--secondary-color);
     text-align: center;
