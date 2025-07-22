@@ -2,11 +2,11 @@
 
 Bem-vindo(a) ao meu portfólio pessoal! Este é o meu espaço para compartilhar um pouco sobre quem eu sou, minha paixão por desenvolvimento e os projetos que venho construindo.
 
-## 🌟 Sobre Mim
+## Sobre Mim
 
 Olá! Sou Ana Lessa, uma desenvolvedora com foco em criar soluções digitais que transformam ideias em realidade. Minha jornada no mundo da programação começou com a curiosidade e evoluiu para uma paixão por construir interfaces intuitivas e funcionais. Tenho experiência em desenvolvimento **Front-End** e estou sempre em busca de novos desafios e oportunidades para aprender e crescer no universo **Full-Stack**.
 
-## 🚀 Tecnologias e Habilidades
+## Tecnologias e Habilidades
 
 Aqui estão algumas das tecnologias e ferramentas com as quais tenho experiência e estou sempre aprimorando:
 
@@ -26,30 +26,26 @@ Aqui estão algumas das tecnologias e ferramentas com as quais tenho experiênci
 ### Ferramentas
 -   **VS Code:** Ambiente de desenvolvimento eficiente.
 
-## 💻 Meus Projetos
+## Meus Projetos
 
 Explore alguns dos meus trabalhos e veja minhas habilidades em ação:
 
 ### 1. Ivi Afro Braids - Linktree Personalizado
 -   **Descrição:** Um Linktree personalizado desenvolvido para a "Ivi Afro Braids", uma trancista. O projeto visa centralizar e facilitar o acesso a todos os links importantes do seu trabalho e serviços.
 -   **Tecnologias:** HTML, CSS.
--   **[🔗 Visualizar Projeto](https://linktree-ivi-afro-braids-one.vercel.app/)**
--   **[🐙 Código no Github](https://github.com/analessp/linktree)**
+-   **[Visualizar Projeto](https://linktree-ivi-afro-braids-one.vercel.app/)**
+-   **[Código no Github](https://github.com/analessp/linktree)**
 
 ### 2. Portfólio de Desenvolvedora (Este Projeto!)
 -   **Descrição:** Este portfólio pessoal, desenvolvido com foco em UI/UX, para apresentar meus projetos, destacar minhas habilidades técnicas e proporcionar uma navegação fluida e interativa para recrutadores e visitantes.
 -   **Tecnologias:** HTML, CSS.
--   **[🔗 Visualizar Projeto](https://portfolio-analessa.vercel.app/)**
--   **[🐙 Código no Github](https://github.com/analessp/portfolio-developer)**
+-   **[Visualizar Projeto](https://portfolio-analessa.vercel.app/)**
+-   **[Código no Github](https://github.com/analessp/portfolio-developer)**
 
-## 📧 Contato
+## Contato
 
 Gostaria de entrar em contato? Sinta-se à vontade para me conectar em minhas redes sociais ou enviar um e-mail!
 
 -   **[LinkedIn](https://linkedin.com/in/ana-lessa-silva)**
 -   **[GitHub](https://github.com/analessp)**
 -   **Email:** lessakesia07@gmail.com
-
----
-
-Agradeço a visita ao meu portfólio!
