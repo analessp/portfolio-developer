@@ -24,7 +24,7 @@
 }
 
 .project-card {
-    background-color: #3d543e;
+    background-color: #242222;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
@@ -57,7 +57,7 @@
 
 .project-info h3 {
     font-size: 1.8rem;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 0.5rem;
 }
 
