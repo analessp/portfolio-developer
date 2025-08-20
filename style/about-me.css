@@ -61,17 +61,17 @@
 }
 
 .skill-category {
-    background-color: #000;
+    background-color: #333;
     border-radius: 10px;
     padding: 0.8rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--primary-color);
     text-align: center;
 }
 
 .skill-category h3 {
     font-size: 1.6rem;
-    color: var(--secondary-color);
+    color: var(--light-text);
     margin-bottom: 1.5rem;
 }
 

@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --primary-color: #6a994e;
-    --background-dark: #000;
-    --light-text: #f0f0f8;
-    --secondary-color: #a7be9f;
-    --accent-color: #c7a184;
+    --primary-color: #000;
+    --background-dark: #333;
+    --light-text: #fff;
+    --secondary-color: #6495ed;
+    --accent-color: #90ee90;
 }
 
 * {
