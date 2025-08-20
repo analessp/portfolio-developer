@@ -26,22 +26,6 @@ Aqui estão algumas das tecnologias e ferramentas com as quais tenho experiênci
 ### Ferramentas
 -   **VS Code:** Ambiente de desenvolvimento eficiente.
 
-## Meus Projetos
-
-Explore alguns dos meus trabalhos e veja minhas habilidades em ação:
-
-### 1. Ivi Afro Braids - Linktree Personalizado
--   **Descrição:** Um Linktree personalizado desenvolvido para a "Ivi Afro Braids", uma trancista. O projeto visa centralizar e facilitar o acesso a todos os links importantes do seu trabalho e serviços.
--   **Tecnologias:** HTML, CSS.
--   **[Visualizar Projeto](https://linktree-ivi-afro-braids-one.vercel.app/)**
--   **[Código no Github](https://github.com/analessp/linktree)**
-
-### 2. Portfólio de Desenvolvedora (Este Projeto!)
--   **Descrição:** Este portfólio pessoal, desenvolvido com foco em UI/UX, para apresentar meus projetos, destacar minhas habilidades técnicas e proporcionar uma navegação fluida e interativa para recrutadores e visitantes.
--   **Tecnologias:** HTML, CSS.
--   **[Visualizar Projeto](https://portfolio-analessa.vercel.app/)**
--   **[Código no Github](https://github.com/analessp/portfolio-developer)**
-
 ## Contato
 
 Gostaria de entrar em contato? Sinta-se à vontade para me conectar em minhas redes sociais ou enviar um e-mail!
