@@ -16,7 +16,7 @@
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .about-me p {
@@ -55,13 +55,13 @@
 
 .skills-section h2 {
     font-size: 2rem;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     margin-bottom: 2rem;
 }
 
 .skill-category {
-    background-color: #333;
+    background-color: var(--brackground-color--);
     border-radius: 10px;
     padding: 0.8rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
