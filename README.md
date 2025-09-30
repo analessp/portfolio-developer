@@ -30,6 +30,6 @@ Aqui estão algumas das tecnologias e ferramentas com as quais tenho experiênci
 
 Gostaria de entrar em contato? Sinta-se à vontade para me conectar em minhas redes sociais ou enviar um e-mail!
 
--   **[LinkedIn](https://linkedin.com/in/ana-lessa-silva)**
+-   **[LinkedIn](https://linkedin.com/in/ana-lessa-2a312a253)**
 -   **[GitHub](https://github.com/analessp)**
 -   **Email:** lessakesia07@gmail.com
