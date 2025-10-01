@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --primary-color: #333;
-    --background-dark: #596750;
-    --light-text: #fff;
-    --secondary-color: #c3c3c3;
-    --accent-color: #90ee90;
+    --primary-color: #000;
+    --background-dark: #fff;
+    --light-text: #ffd54f;
+    --secondary-color: #ffc107;
+    --accent-color: #ffb300;
 }
 
 * {
@@ -33,7 +33,28 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat", sans-serif;
-    color: var(--light-text);
+    color: var(--primary-color);
+}
+
+.highlighted-text {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid var(--secondary-color);
+    white-space: nowrap;
+    color: var(--secondary-color);
+    animation: typing 2s steps(9, end), blink-caret .75s step-end infinite;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 9ch; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: var(--secondary-color); }
 }
 
 header {
@@ -126,6 +147,7 @@ main {
     font-size: 3.2rem;
     color: var(--primary-color);
     margin-bottom: 0.5rem;
+    line-height: 1;
 }
 
 .title h2 {
@@ -208,12 +230,13 @@ flex-shrink: 0;
 }
 
 footer {
-    background-color: var(--background-dark);
-    color: var(--light-text);
-    text-align: center;
-    padding: 1.5rem 0;
-    font-size: 0.9rem;
     flex-shrink: 0;
+    text-align: center;
+    padding: 1.2rem 0;
+    background-color: #242222;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
 }
 
 /* Para laptops menores e tablets na horizontal */
