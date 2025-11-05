@@ -1,4 +1,4 @@
-# Portfólio de Desenvolvedora - Ana Lessa
+# Portfolio Developer
 
 Bem-vindo(a) ao meu portfólio pessoal! Este é o meu espaço para compartilhar um pouco sobre quem eu sou, minha paixão por desenvolvimento e os projetos que venho construindo.
 
